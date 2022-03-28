@@ -1,0 +1,54 @@
+export DOTFILES=$HOME/.dotfiles
+
+# Path to your oh-my-zsh installation.
+export ZSH=$HOME/.oh-my-zsh
+
+ZSH_CUSTOM=$DOTFILES/zsh
+
+# Hide username in prompt
+DEFAULT_USER=`whoami`
+
+load_files() {
+	declare -a FILES=(
+		${DOTFILES}/zsh/aliases.zsh
+		${DOTFILES}/zsh/exports.zsh
+		${DOTFILES}/zsh/functions.zsh
+		${DOTFILES}/zsh/settings.zsh
+		$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+	)
+
+	for x in "${FILES[@]}"; do
+		[[ -f "$x" ]] && source "$x"
+	done
+}
+
+# Load zsh-completions
+fpath=($(brew --prefix)/share/zsh-completions $fpath)
+
+# Source other files
+load_files
+
+# Which plugins would you like to load?
+# Standard plugins can be found in $ZSH/plugins/
+# Custom plugins may be added to $ZSH_CUSTOM/plugins/
+plugins=(artisan git composer zsh-z macos zsh-autosuggestions thefuck)
+
+# load support for tab completions
+autoload -U compinit; compinit
+
+# Append history as commands are executed
+setopt inc_append_history
+# Don't save duplicates
+setopt hist_ignore_all_dups
+# Treat #, ~, and ^ as part of patterns for filename generation
+setopt extended_glob
+# Share history between tabs / sessions
+setopt share_history
+
+# Starship
+precmd_functions+=(set_win_title)
+starship_precmd_user_func="set_win_title"
+
+eval "$(starship init zsh)"
+
+unset load_files

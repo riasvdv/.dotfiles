@@ -1,0 +1,48 @@
+command_timeout = 1000
+
+# Replace the "❯" symbol in the prompt with "➜"
+[character] # The name of the module we are configuring is "character"
+success_symbol = "[➜](bold green)" # The "success_symbol" segment is being set to "➜" with the color "bold green"
+error_symbol = "[✗](bold red)"
+
+[cmd_duration]
+min_time = 4
+show_milliseconds = true
+disabled = false
+style = "bold italic cyan"
+
+[time]
+disabled = false
+format = '[\[$time\]]($style) '
+
+[git_branch]
+format = "[$branch]($style) "
+style = "bold 242"
+
+[git_status]
+format = "([$all_status$ahead_behind]($style)) "
+ahead = "⇡"
+diverged = "⇡⇣"
+behind = "⇣"
+modified = "*"
+style = "bold cyan"
+
+[[battery.display]]  # "bold red" style when capacity is between 0% and 10%
+threshold = 10
+style = "bold red"
+
+[[battery.display]]  # "bold yellow" style when capacity is between 10% and 30%
+threshold = 30
+style = "bold yellow"
+
+[nodejs]
+format = "[⬢ $version](bold green) "
+
+[package]
+format = "[$version]($style) "
+
+[docker_context]
+disabled = true
+
+[java]
+disabled = true

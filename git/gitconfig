@@ -1,0 +1,9 @@
+[user]
+	email = hey@rias.be
+	name = riasvdv
+[core]
+	editor = phpstorm
+[include]
+	path = ~/.gitinclude
+[init]
+    defaultBranch = main

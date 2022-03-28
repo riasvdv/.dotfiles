@@ -1,0 +1,60 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- shell:
+    - git submodule update --init --recursive
+
+- create:
+    - ~/Code
+    - ~/.npm-packages
+    - ~/.cache/zsh
+
+- tap:
+    - homebrew/cask-fonts
+
+- brew:
+    - composer
+    - ffmpeg
+    - imagemagick
+    - mysql
+    - n
+    - php
+    - redis
+    - starship
+    - terminal-notifier
+    - thefuck
+    - wget
+    - yarn
+    - zsh
+    - zsh-syntax-highlighting
+    - zsh-completions
+
+- cask:
+    - phpmon
+    - qlcolorcode
+    - qlimagesize
+    - qlmarkdown
+    - qlvideo
+    - quicklook-json
+    - font-menlo-for-powerline
+    - font-jetbrains-mono
+    - font-fira-code
+
+- link:
+      ~/.zshrc:
+          force: true
+          path: zsh/zshrc
+      ~/.gitconfig:
+          force: true
+          path: git/gitconfig
+      ~/.gitignore: git/gitignore
+      ~/.gitinclude: git/gitinclude
+      ~/.gitattributes: git/gitattributes
+
+- shell:
+    - source ${HOME}/.zshrc
+    - npm config set prefix ${HOME}/.npm-packages
+    - ./macos
