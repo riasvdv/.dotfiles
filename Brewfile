@@ -17,6 +17,7 @@ brew 'git'
 brew 'gnupg'
 brew 'grep'
 brew 'httpie'
+brew 'mackup'
 brew 'jq' # Used for spatie/visit
 brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
 brew 'starship'

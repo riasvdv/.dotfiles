@@ -25,6 +25,7 @@
       ~/.gitignore: git/gitignore
       ~/.gitinclude: git/gitinclude
       ~/.gitattributes: git/gitattributes
+      ~/.mackup.cfg: mackup.cfg
 
 - shell:
     - source ${HOME}/.zshrc
