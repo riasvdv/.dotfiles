@@ -22,16 +22,24 @@ load_files() {
 	done
 }
 
+# Which plugins would you like to load?
+# Standard plugins can be found in $ZSH/plugins/
+# Custom plugins may be added to $ZSH_CUSTOM/plugins/
+plugins=(
+    artisan
+    composer
+    git
+    macos
+    thefuck
+    zsh-z
+    zsh-autosuggestions
+)
+
 # Load zsh-completions
 fpath=($(brew --prefix)/share/zsh-completions $fpath)
 
 # Source other files
 load_files
-
-# Which plugins would you like to load?
-# Standard plugins can be found in $ZSH/plugins/
-# Custom plugins may be added to $ZSH_CUSTOM/plugins/
-plugins=(artisan git composer zsh-z macos zsh-autosuggestions thefuck)
 
 # load support for tab completions
 autoload -U compinit; compinit
@@ -52,3 +60,5 @@ starship_precmd_user_func="set_win_title"
 eval "$(starship init zsh)"
 
 unset load_files
+
+source $ZSH/oh-my-zsh.sh
