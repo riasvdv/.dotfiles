@@ -7,7 +7,7 @@ error_symbol = "[✗](bold red)"
 
 [cmd_duration]
 min_time = 4
-show_milliseconds = true
+show_milliseconds = false
 disabled = false
 style = "bold italic cyan"
 
