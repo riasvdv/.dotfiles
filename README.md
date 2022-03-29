@@ -17,7 +17,7 @@ Feel free to create an issue on this repo if you have any questions about them.
 ![screenshot](https://user-images.githubusercontent.com/3626559/160554910-35dac350-093a-4219-87c1-1975d20dba7b.png)
 
 ## Credits
-https://github.com/mathiasbynens/dotfiles
-https://github.com/freekmurze/dotfiles
-https://github.com/driesvints/dotfiles
-https://github.com/AlexVanderbist/dotfiles
+https://github.com/mathiasbynens/dotfiles  
+https://github.com/freekmurze/dotfiles  
+https://github.com/driesvints/dotfiles  
+https://github.com/AlexVanderbist/dotfiles 
