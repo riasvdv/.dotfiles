@@ -35,4 +35,5 @@
     - [$HOME/.composer/vendor/bin/valet install, Installing Valet]
     - [sudo valet trust, Trusting Valet]
     - [$HOME/.composer/vendor/bin/global-ray install, Installing Global Ray]
+    - [brew autoupdate start --upgrade --cleanup, Starting Brew auto-update]
     - ./macos

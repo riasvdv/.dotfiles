@@ -3,6 +3,7 @@ tap 'homebrew/cask'
 tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
+tap 'homebrew/autoupdate'
 tap 'nicoverbruggen/homebrew-cask'
 tap 'stripe/stripe-cli'
 
