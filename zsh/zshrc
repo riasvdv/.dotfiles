@@ -62,3 +62,9 @@ eval "$(starship init zsh)"
 unset load_files
 
 source $ZSH/oh-my-zsh.sh
+
+export START="/Users/rias/Code"
+if [[ $PWD == $HOME ]]; then
+    cd $START
+fi
+
