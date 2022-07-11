@@ -1,6 +1,7 @@
 # PHP
 alias phpunit="vendor/bin/phpunit"
 alias phpunitw="phpunit-watcher watch"
+alias phpstan="vendor/bin/phpstan analyse"
 alias a="php artisan"
 alias pl="php please"
 alias da="ddev exec php artisan"
