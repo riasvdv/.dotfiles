@@ -25,7 +25,7 @@ function deploy() {
 }
 
 function deploy-code() {
-  if [ -f vendor/bin/pest ]; then
+  if [ -f vapor.yml ]; then
       vapor deploy
    else
       envoy run deploy
