@@ -15,6 +15,24 @@ function pf() {
    fi
 }
 
+function deploy() {
+  if [ -f vapor.yml ]; then
+      vapor deploy
+   else
+      envoy run deploy
+   fi
+   open raycast://confetti
+}
+
+function deploy-code() {
+  if [ -f vendor/bin/pest ]; then
+      vapor deploy
+   else
+      envoy run deploy
+   fi
+   open raycast://confetti
+}
+
 #  Commit everything
 function commit() {
   commitMessage="$*"
