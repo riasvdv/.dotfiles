@@ -41,6 +41,7 @@ brew 'svgo'
 brew 'gifsicle'
 
 # Development
+brew 'asimov'
 brew 'php'
 brew 'composer'
 brew 'imagemagick'
