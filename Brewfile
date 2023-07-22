@@ -42,13 +42,8 @@ brew 'gifsicle'
 
 # Development
 brew 'asimov'
-brew 'php'
-brew 'composer'
-brew 'imagemagick'
-brew 'mysql'
-brew 'nginx'
+brew 'mysql-client'
 brew 'n'
-brew 'redis'
 brew 'yarn'
 brew 'go'
 
