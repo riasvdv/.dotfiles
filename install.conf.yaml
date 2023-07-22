@@ -30,10 +30,7 @@
 - shell:
     - source ${HOME}/.zshrc
     - npm config set prefix ${HOME}/.npm-packages
-    - [pecl install imagick redis swoole, Installing PHP Extensions]
-    - [composer global require laravel/installer laravel/valet spatie/global-ray laravel/envoy laravel/vapor-cli, Installing Global Composer Packages]
-    - [$HOME/.composer/vendor/bin/valet install, Installing Valet]
-    - [sudo valet trust, Trusting Valet]
+    - [composer global require laravel/installer spatie/global-ray laravel/envoy laravel/vapor-cli, Installing Global Composer Packages]
     - [$HOME/.composer/vendor/bin/global-ray install, Installing Global Ray]
     - [brew autoupdate start --upgrade --cleanup, Starting Brew auto-update]
     - ./macos
