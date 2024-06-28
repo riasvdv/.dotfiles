@@ -17,20 +17,26 @@ function pf() {
 
 function deploy() {
   if [ -f vapor.yml ]; then
-      vapor deploy
+      vapor deploy "$@"
    else
-      envoy run deploy
+      envoy run deploy "$@"
    fi
-   open raycast://confetti
+
+   success=$?
+
+   [ $success -eq 0 ] && open raycast://confetti
 }
 
 function deploy-code() {
   if [ -f vapor.yml ]; then
-      vapor deploy
+      vapor deploy "$@"
    else
-      envoy run deploy
+      envoy run deploy-code "$@"
    fi
-   open raycast://confetti
+
+   success=$?
+
+   [ $success -eq 0 ] && open raycast://confetti
 }
 
 #  Commit everything
