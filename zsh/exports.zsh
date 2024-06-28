@@ -3,6 +3,9 @@ export LC_ALL="en_US.UTF-8"
 export LANG="en_US.UTF-8"
 export LANGUAGE="en_US.UTF-8"
 
+# PHP
+export PHP_CS_FIXER_IGNORE_ENV=true
+
 # Highlight section titles in manual pages
 export LESS_TERMCAP_md="$ORANGE"
 
