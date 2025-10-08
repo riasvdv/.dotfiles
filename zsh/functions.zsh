@@ -19,7 +19,7 @@ function deploy() {
   if [ -f vapor.yml ]; then
       vapor deploy "$@"
    else
-      envoy run deploy "$@"
+      vendor/bin/envoy run deploy "$@"
    fi
 
    success=$?
@@ -31,7 +31,7 @@ function deploy-code() {
   if [ -f vapor.yml ]; then
       vapor deploy "$@"
    else
-      envoy run deploy-code "$@"
+      vendor/bin/envoy run deploy-code "$@"
    fi
 
    success=$?

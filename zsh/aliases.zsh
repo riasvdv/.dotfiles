@@ -32,3 +32,6 @@ alias flushdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
 
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
+
+# Bat
+alias cat="bat --paging=never"
